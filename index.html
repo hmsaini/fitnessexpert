@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Fitness Expert</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <style data-shopify>
+    @font-face {
+      font-family: "ITC Avant Garde Gothic";
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://fonts.shopifycdn.com/itc_avant_garde_gothic/itcavantgardegothic_n7.e4cdcda7001c6328cfe571734c25261390a886d4.woff2?h1=c2t5c2lucy5jb20&hmac=9d93e1f1a5b6f6d35f36dca4d477742f4861dfe32152293eadfb2957135dcf91") format("woff2"),
+        url("https://fonts.shopifycdn.com/itc_avant_garde_gothic/itcavantgardegothic_n7.92961a6809350e21152cba06e9fa88f81a23d481.woff?h1=c2t5c2lucy5jb20&hmac=2cd9f6b135d8de6f00bf7a55182fbed948b5279e8a463b044639e412b6acf39f") format("woff");
+    }
+
+    @font-face {
+      font-family: Futura;
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://fonts.shopifycdn.com/futura/futura_n4.df36ce3d9db534a4d7947f4aa825495ed740e410.woff2?h1=c2t5c2lucy5jb20&hmac=0f46f7fa334cb269a6fcfbd842e72171781e674c095f5191285ed6e831a4c525") format("woff2"),
+        url("https://fonts.shopifycdn.com/futura/futura_n4.6bce24beb4ba1ff4ddeb20f7cd6e2fa513a3d6ec.woff?h1=c2t5c2lucy5jb20&hmac=8bcd499c06ce12a67d449cbc44c6e6f67885c3504b9b71d133383cedd7462dd9") format("woff");
+    }
+
+
+    @font-face {
+      font-family: Futura;
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+      src: url("https://fonts.shopifycdn.com/futura/futura_n6.bbe2e25d5b96d13ff36b242171a3d07cf5a60170.woff2?h1=c2t5c2lucy5jb20&hmac=1c5c1d95fb6887d74df6e72a3704b5c5fce9ecbf6124612c09d7664de7632c7e") format("woff2"),
+        url("https://fonts.shopifycdn.com/futura/futura_n6.66fa8f5c3c4b2c7c04809ecefe751450fa59d995.woff?h1=c2t5c2lucy5jb20&hmac=78edf0afa95aacf840c2ec43211a46ce88e64ae7c3abab40c77de4a16e1ad77e") format("woff");
+    }
+
+    @font-face {
+      font-family: Futura;
+      font-weight: 400;
+      font-style: oblique;
+      font-display: swap;
+      src: url("https://fonts.shopifycdn.com/futura/futura_o4.9747e2e6ed2f11b894984527c927b42234e48815.woff2?h1=c2t5c2lucy5jb20&hmac=ee6ed710b8fa4705418f056af87e0d3711224d3869d3a991b41f85ba5c1ee559") format("woff2"),
+        url("https://fonts.shopifycdn.com/futura/futura_o4.d5edc6b1d9a050bbe0beb9093d73b883bf18c6c1.woff?h1=c2t5c2lucy5jb20&hmac=d6eeb6b456e2064f7dd0913c392eb7bc379161eed7ed5a91d537288af1a7b252") format("woff");
+    }
+
+    @font-face {
+      font-family: Futura;
+      font-weight: 600;
+      font-style: oblique;
+      font-display: swap;
+      src: url("https://fonts.shopifycdn.com/futura/futura_o6.2978dbd38bd9b3e8b72ee3299cd940da2900eb72.woff2?h1=c2t5c2lucy5jb20&hmac=fad540c27e07e351cb059e052f56993ceea1565dcdfa823841b509e6edb67cd4") format("woff2"),
+        url("https://fonts.shopifycdn.com/futura/futura_o6.bbc5bc6e7a675b3182e4866da9f9643bb3821261.woff?h1=c2t5c2lucy5jb20&hmac=f4f6c17f351e45b4c76a6b6a9985014b0a5fa0d8b488b286740724e62c3acff9") format("woff");
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/flaticon/flaticon.css">
+
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+
+  <!-- owl carousel-->
+  <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css" />
+
+  <!-- responsive tabs-->
+  <link rel="stylesheet" href="css/responsive-tabs/responsive-tabs.css" />
+
+  <!-- Magnific popup-->
+  <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css" />
+
+  <!-- animate css -->
+  <link rel="stylesheet" href="css/animate/animate.css" />
+
+  <!-- custom css-->
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
+  <header class="header" id="home">
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top ">
+      <div class="container site-nav-wrapper">
+        <a href="/" class="navbar-brand" style="color:#e77785;font-weight: 700">
+          <!-- <img src="images/home/logo/logo.png" class="nav-logo" alt=""> -->
+          <h1>Fitness Expert</h1>
+        </a>
+
+        <span id="mobile-nav-open-btn">
+          &#9776;
+        </span>
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link smooth-scroll">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section_about" class="nav-link smooth-scroll">Shop All</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section_services" class="nav-link smooth-scroll">Proteins</a>
+            </li>
+            <li class="nav-item">
+              <a href="#section_gallery" class="nav-link smooth-scroll">Online Training</a>
+            </li>
+            <li class="nav-item">
+              <a href=".fw-contact-form" class="nav-link smooth-scroll">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- mobile nav  -->
+        <div id="mobile-nav">
+          <span id="mobile-nav-close-btn">
+            &times;
+          </span>
+          <div id="mobile-nav-content">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#home" class="nav-link smooth-scroll">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section_about" class="nav-link smooth-scroll">Shop All</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section_services" class="nav-link smooth-scroll">Proteins</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section_gallery" class="nav-link smooth-scroll">Online Training</a>
+              </li>
+              <li class="nav-item">
+                <a href=".fw-contact-form" class="nav-link smooth-scroll">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <!--   home  -->
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main" style="color:rgb(255, 150, 0);">Sports</span>
+        <span class="heading-primary--main" style="color: #fff;">Nutrition</span>
+      </h1>
+
+      <button class="btn-view-all-products">
+        <a href="" class="">View All Products</a>
+      </button>
+    </div>
+    <!-- home ends-->
+  </header>
+  <!-- Header Ends here -->
+
+  <!-- top products -->
+  <section id="section_top-products">
+    <div class="container">
+      <div class="row wow fadeInRight">
+        <!-- top-products -->
+        <div class="col-lg-4 col-sm-12 top-product">
+          <div class="top-product-background" style="background: url('./images/home/top-products/1.jpg');">
+            <div class="promo_content">
+              <h6>Nutrition</h6>
+              <h2>Opti-Men</h2>
+            </div>
+            <div class="view-button">
+              <a>View More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12 top-product">
+          <div class="top-product-background" style="background: url('./images/home/top-products/4.jpg');">
+            <div class="promo_content">
+              <h6 style="color:rgb(255, 150, 0)">SIMPLIFY YOUR LIFE</h6>
+              <h2 style="font-size: 22px;">UP TO 20% OFF
+                SPORTS NUTRITION</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12 top-product">
+          <div class="top-product-background" style="background: url('./images/home/top-products/3.png');">
+            <div class="promo_content">
+              <h6>Nutrition</h6>
+              <h2>Opti-Men</h2>
+            </div>
+            <div class="view-button">
+              <a>View More</a>
+            </div>
+          </div>
+        </div>
+        <!-- top-products -->
+      </div>
+    </div>
+
+  </section>
+  <!-- top products ends here -->
+
+  <!-- recent products -->
+  <section id="section_recent-products">
+    <div class="content-box-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 wow slideInLeft" data-wow-duration="1s">
+            <div class="">
+              <div class="recent-products-heading">
+                <h2><span>Recent</span> <strong>Products</strong></h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-6 wow slideInRight" data-wow-duration="1s">
+            <div id="recent-products" class="owl-carousel owl-theme">
+              <!-- pro 01-->
+              <div id="recent-product">
+                <img src="images/home/recent-products/1.png" alt="team member" class="img-fluid">
+                <div class="recent-product-overlay">
+                  <div class="recent-product-info text-center">
+                    <h2 class="title">Whey Protein Isolate</h2>
+                    <div class="prices">
+                      <p class="list-price">7900 rs</p>
+                      <p class="sale-price">6700 rs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pro 02-->
+              <div id="recent-product">
+                <img src="images/home/recent-products/2.png" alt="team member" class="img-fluid">
+                <div class="recent-product-overlay">
+                  <div class="recent-product-info text-center">
+                    <h2 class="title">Whey Protein Isolate</h2>
+                    <div class="prices">
+                      <p class="list-price">7900 rs</p>
+                      <p class="sale-price">6700 rs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pro 03-->
+              <div id="recent-product">
+                <img src="images/home/recent-products/6.png" alt="team member" class="img-fluid">
+                <div class="recent-product-overlay">
+                  <div class="recent-product-info text-center">
+                    <h2 class="title">Whey Protein Isolate</h2>
+                    <div class="prices">
+                      <p class="list-price">7900 rs</p>
+                      <p class="sale-price">6700 rs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pro 04-->
+              <div id="recent-product">
+                <img src="images/home/recent-products/13.png" alt="team member" class="img-fluid">
+                <div class="recent-product-overlay">
+                  <div class="recent-product-info text-center">
+                    <h2 class="title">Whey Protein Isolate</h2>
+                    <div class="prices">
+                      <p class="list-price">7900 rs</p>
+                      <p class="sale-price">6700 rs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pro 05-->
+              <div id="recent-product">
+                <img src="images/home/recent-products/5.png" alt="team member" class="img-fluid">
+                <div class="recent-product-overlay">
+                  <div class="recent-product-info text-center">
+                    <h2 class="title">Whey Protein Isolate</h2>
+                    <div class="prices">
+                      <p class="list-price">7900 rs</p>
+                      <p class="sale-price">6700 rs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pro 06-->
+              <div id="recent-product">
+                <img src="images/home/recent-products/20.png" alt="team member" class="img-fluid">
+                <div class="recent-product-overlay">
+                  <div class="recent-product-info text-center">
+                    <h2 class="title">Whey Protein Isolate</h2>
+                    <div class="prices">
+                      <p class="list-price">7900 rs</p>
+                      <p class="sale-price">6700 rs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- recent products -->
+
+  <!-- products gallery -->
+  <section id="section_gallery">
+    <div class="container">
+      <div class="row no-gutters justify-content-center mb-5 pb-2">
+        <div class="col-md-6 text-center heading-section ftco-animate">
+          <h1 class="big">Gallery</h1>
+          <span class="subheading">Products</span>
+          <h2 class="mb-4">Give your body the respect it deserves.</h2>
+          <h3>100% genuine | 100% results.</h3>
+          <p>Our products are scientifically formulated with the cleanest ingredients at the right concentrations to
+            help you build the ultimate physique.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row no-gutters wow fadeInUp">
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="gallery-products">
+            <img src="images/home/gallery/1.png" class="img-fluid" >
+            <div class="text">
+              <span>Whey Protein Isolate</span>
+              <h3><a>Dynami Nutrition</a></h3>
+              <div class="prices">
+                <p class="list-price">7900 rs</p>
+                <p class="sale-price">6900 rs</p>
+              </div>
+              <div class="buy-now">
+                <a href="">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="gallery-products">
+            <img src="images/home/gallery/9.png" class="img-fluid" >
+            <div class="text">
+              <span>Whey Protein Isolate</span>
+              <h3><a>Dynami Nutrition</a></h3>
+              <div class="prices">
+                <p class="list-price">7900 rs</p>
+                <p class="sale-price">6900 rs</p>
+              </div>
+              <div class="buy-now">
+                <a href="">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="gallery-products">
+            <img src="images/home/gallery/13.png" class="img-fluid" >
+            <div class="text">
+              <span>Whey Protein Isolate</span>
+              <h3><a>Dynami Nutrition</a></h3>
+              <div class="prices">
+                <p class="list-price">7900 rs</p>
+                <p class="sale-price">6900 rs</p>
+              </div>
+              <div class="buy-now">
+                <a href="">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="gallery-products">
+            <img src="images/home/gallery/2.png" class="img-fluid" >
+            <div class="text">
+              <span>Whey Protein Isolate</span>
+              <h3><a>Dynami Nutrition</a></h3>
+              <div class="prices">
+                <p class="list-price">7900 rs</p>
+                <p class="sale-price">6900 rs</p>
+              </div>
+              <div class="buy-now">
+                <a href="">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="gallery-products">
+            <img src="images/home/gallery/20.png" class="img-fluid" >
+            <div class="text">
+              <span>Whey Protein Isolate</span>
+              <h3><a>Dynami Nutrition</a></h3>
+              <div class="prices">
+                <p class="list-price">7900 rs</p>
+                <p class="sale-price">6900 rs</p>
+              </div>
+              <div class="buy-now">
+                <a href="">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="gallery-products">
+            <img src="images/home/gallery/22.png" class="img-fluid" >
+            <div class="text">
+              <span>Whey Protein Isolate</span>
+              <h3><a>Dynami Nutrition</a></h3>
+              <div class="prices">
+                <p class="list-price">7900 rs</p>
+                <p class="sale-price">6900 rs</p>
+              </div>
+              <div class="buy-now">
+                <a href="">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="gallery-products">
+            <img src="images/home/gallery/5.png" class="img-fluid" >
+            <div class="text">
+              <span>Whey Protein Isolate</span>
+              <h3><a>Dynami Nutrition</a></h3>
+              <div class="prices">
+                <p class="list-price">7900 rs</p>
+                <p class="sale-price">6900 rs</p>
+              </div>
+              <div class="buy-now">
+                <a href="">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="gallery-products">
+            <img src="images/home/gallery/6.png" class="img-fluid" >
+            <div class="text">
+              <span>Whey Protein Isolate</span>
+              <h3><a>Dynami Nutrition</a></h3>
+              <div class="prices">
+                <p class="list-price">7900 rs</p>
+                <p class="sale-price">6900 rs</p>
+              </div>
+              <div class="buy-now">
+                <a href="">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- products gallery ends here -->
+
+  <!-- Nutrition -->
+  <section id="section_nutrition-text">
+    <div class="container" style="margin-bottom: 10rem">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="transformation-quote">
+            <h1>Why be average... <br><br>
+              when you can be extraordinary?
+            </h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad placeat corrupti enim amet, deserunt illum
+              dolore nihil a natus dolorum explicabo error recusandae hic? Tempora veniam iusto quae illum fuga.
+            </p>
+
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam deleniti obcaecati laborum doloremque
+              aspernatur, porro cupiditate eos voluptates pariatur eligendi, iusto velit neque temporibus sunt dolores
+              reprehenderit. Dolor, itaque unde.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="transformation-text">
+            <h1>Ultimate Transformation Plan</h1>
+            <p>Achieve your fitness goals with your personalized home or gym workout and diet plan.</p>
+            <div class="contact-button">
+              <a href="">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="final-quote">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="images/home/header/4.jpg" alt="">
+          </div>
+          <div class="col-md-8">
+            <h1>
+             <strong>Need a consultation?</strong>  Make an appointment!</h1>
+            <p>Need a professional diet consultation? Talk to our dietitians!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Nutrition ends here -->
+
+  <!-- sunmeet -->
+  <section id="section_sunmeet">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/home/sunmeet/sunmeet.jpg" class="sunmeet-bio" alt="">
+        </div>
+        <div class="col-md-6">
+          <div class="sunmeet-text">
+            <h2>Brought to You By</h2>
+            <h1>Sunmeet Gill</h1>
+            <p>I'm here to give you the tools you need to build your dream physique, crush your goals and conquer your
+              mindset. After spending over 12 years in the fitness industry and achieving my own transformation, I've
+              learnt that fitness is a lifestyle...NOT a temporary fix. There are no shortcuts when it comes to
+              achieving anything extraordinary. You have to be prepared to work hard and believe in yourself no matter
+              how hard it gets. But if you promise to give it your all, I'll meet you halfway and help you reach your
+              goals. Period.
+            </p>
+
+            <p>I stand behind my products 100% and by the time you get your hands on them, they've been tasted and
+              tested hundreds of times for flavor, consistency and most importantly RESULTS.
+            </p>
+
+            <P>I know my supplements aren't the cheapest but they are the best. After all, this is your life, how can
+              you not invest in that?
+            </P>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- sunmeet ends here -->
+
+  <!-- workout video -->
+  <!-- <section id="section_workout">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/124077529?autoplay=1"
+              allowFullScreen="allowFullScreen"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- workout videos ends here -->
+
+  <!-- services -->
+  <section id="section_sub-services">
+    <div class="container">
+      <div class="row no-gutters d-flex">
+        <div class="col-md-12 col-lg-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 services d-block">
+            <div class="icon"><span><i class="fas fa-thumbs-up"></i></span></div>
+            <div class="media-body">
+              <h3 class="heading mb-3">Free Shipping</h3>
+              <p> On Order over 3000 rs</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 services d-block">
+            <div class="icon"><span><i class="fas fa-money-bill-wave-alt"></i></span></div>
+            <div class="media-body">
+              <h3 class="heading mb-3">100% Money Back</h3>
+              <p>Within 30 Days after delivery</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 d-flex align-self-stretch ftco-animate">
+          <div class="media block-6 services active d-block">
+            <div class="icon"><span><i class="fab fa-whatsapp"></i></span></div>
+            <div class="media-body">
+              <h3 class="heading mb-3">Support 24/7</h3>
+              <p>We can help you online.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- services ends here -->
+
+  <!-- reviews -->
+  <section id="section_review">
+    <div class="container">
+      <div class="row no-gutters ftco-animate justify-content-center">
+        <div class="col-md-8 col-lg-8 py-5">
+          <div class="py-md-5">
+            <div class="heading-section ftco-animate">
+              <h1 class="big big-2">Happy</h1>
+              <span class="subheading wow fadeInLeft">Testimony</span>
+              <h2 class="mb-0  wow fadeInLeft">Happy Customers</h2>
+            </div>
+            <div class="col-md-12 col-sm-12 wow fadeInRight" data-wow-duration="2s">
+              <div id="testimonial-slider" class="owl-carousel owl-theme">
+                <!-- testimonial 01 -->
+                <div class="testimonial">
+                  <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Incidunt porro placeat
+                    neque tempore voluptate
+                    perspiciatis eum commodi consectetur accusantium. Soluta qui, est rerum error
+                    provident eius nam
+                    molestiae optio sapiente!</p>
+
+                  <div class="author">
+                    <div class="col-md-2 col-sm-3 col-6">
+                      <img src="images/home/reviews/1.jfif" alt="" class="img-fluid img-circle">
+                    </div>
+                    <div class="col-md-10 col-sm-3 col-6">
+                      <div class="author-name-des">
+                        <p class="">Chem Saini</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial">
+                  <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Incidunt porro placeat
+                    neque tempore voluptate
+                    perspiciatis eum commodi consectetur accusantium. Soluta qui, est rerum error
+                    provident eius nam
+                    molestiae optio sapiente!</p>
+
+                  <div class="author">
+                    <div class="col-md-2 col-sm-3 col-6">
+                      <img src="images/home/reviews/2.jfif" alt="" class="img-fluid img-circle">
+                    </div>
+                    <div class="col-md-10 col-sm-3 col-6">
+                      <div class="author-name-des">
+                        <p class="">Harpreet Saini</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial">
+                  <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Incidunt porro placeat
+                    neque tempore voluptate
+                    perspiciatis eum commodi consectetur accusantium. Soluta qui, est rerum error
+                    provident eius nam
+                    molestiae optio sapiente!</p>
+
+                  <div class="author">
+                    <div class="col-md-2 col-sm-3 col-6">
+                      <img src="images/home/reviews/3.jfif" alt="" class="img-fluid img-circle">
+                    </div>
+                    <div class="col-md-10 col-sm-3 col-6">
+                      <div class="author-name-des">
+                        <p class="">Harpreet Saini</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image-container">
+            <img src="images/home/reviews/5.jpg" alt="" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- reviews ends here -->
+
+  <footer id="section_footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h1>Fitness Expert</h1>
+            <p>Being fit and living healthy is what will make you happy and strong.</p>
+            <p>We believe in training with intensity, eating to fuel your body and having fun while doing it.</p>
+          </div>
+          <div class="col-md-4">
+            <h2>Contact Info</h2>
+            <ul>
+              <li>Address <p>123, Sirsa Haryana, 144306</p>
+              </li>
+              <li>Open Hours <p>123, Sirsa Haryana, 144306</p>
+              </li>
+              <li>Phone <p>123, Sirsa Haryana, 144306</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <div class="instagram">
+              <h2>Instagram</h2>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <a href="https://www.instagram.com/sunmeetgill/">
+                    <img src="images/home/footer/1.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="https://www.instagram.com/sunmeetgill/">
+                    <img src="images/home/footer/2.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="https://www.instagram.com/sunmeetgill/">
+                    <img src="images/home/footer/3.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="https://www.instagram.com/sunmeetgill/">
+                    <img src="images/home/footer/4.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="https://www.instagram.com/sunmeetgill/">
+                    <img src="images/home/footer/5.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="https://www.instagram.com/sunmeetgill/">
+                    <img src="images/home/footer/6.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="copyright">
+              <p>
+                <span style="color: #fff;">Fitness Expert</span> &copy; 2021 All Rights Reserved 
+                <!-- | Developed with <i
+                  class="far fa-heart"></i> by
+                <a href="https://www.instagram.com/harpreet_sainnii/" style="color: #fff;">Harpreet
+                  Saini</a> -->
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="socials">
+              <ul>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to top -->
+    <a href="#home" id="back-to-top" class="btn-back-to-top smooth-scroll .d-none .d-sm-block" title="home"
+      role="button">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </footer>
+
+  <!-- jquery -->
+  <script src="js/jquery.js"></script>
+  <!-- boottrap js-->
+  <script src="js/bootstrap/bootstrap.js"></script>
+  <!-- owl carousel js-->
+  <script src="js/owl-carousel/owl.carousel.min.js"></script>
+  <!-- waypoints-->
+  <script src="js/waypoints/jquery.waypoints.min.js"></script>
+  <!-- Responsive tabs-->
+  <script src="js/responsive-tabs/jquery.responsiveTabs.min.js"></script>
+  <!-- particle -->
+  <!-- <script src="js/particle/particles.js"></script>
+    <script src="js/particle/app.js"></script> -->
+  <!-- isotope -->
+  <script src="js/isotope/isotope.pkgd.min.js"></script>
+  <!-- Magnific popup-->
+  <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- counter-->
+  <script src="js/counter/jquery.counterup.min.js"></script>
+  <!-- easing-->
+  <script scr="js/easing/jquery.easing.1.3.js"></script>
+  <!-- wow js -->
+  <script src="js/wow/wow.min.js"></script>
+  <!-- custom js-->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
